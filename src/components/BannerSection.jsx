@@ -4,8 +4,8 @@ function BannerSection(){
     return(
         <section>
             
-                <div>
-                    <img src={bakery} className="h-150 w-[98%] container mx-auto rounded-xl"></img>
+                <div className="w-full">
+                    <img src={bakery} className="h-150 w-[95%] container mx-auto rounded-xl"></img>
                 </div>
                 
         </section>
