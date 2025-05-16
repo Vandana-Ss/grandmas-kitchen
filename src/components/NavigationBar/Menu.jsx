@@ -1,5 +1,6 @@
-import BannerSection from "../BannerSection";
-import Footer from "../Footer";
+import BannerSection from "../BannerSection.jsx";
+import Footer from "../Footer.jsx";
+import ScrollToTopButton from "../ScrollToTopButton.jsx";
 
 function Menu() {
 	return (
@@ -130,6 +131,8 @@ function Menu() {
 					</div>
 				))}
 			</section>
+
+			<ScrollToTopButton/>
 
 			<Footer/>
 		</>

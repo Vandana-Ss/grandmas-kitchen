@@ -1,4 +1,5 @@
 import Footer from "../components/Footer.jsx";
+import { Link } from "react-router-dom"
 
 
 function GrandmasKitchen() {
@@ -65,19 +66,24 @@ function GrandmasKitchen() {
 
 			<div className="container mx-auto">
 				<div className="flex justify-center gap-4 mt-10">
-					<button className="bg-[#42965f] text-white px-6 py-2 rounded-md hover:bg-[#377f4e] transition duration-300 hover:cursor-pointer">
-						RESERVATION
-					</button>
+					<Link to="/reservations">
+						<button className="bg-[#42965f] text-white px-6 py-2 rounded-md hover:bg-[#377f4e] transition duration-300 hover:cursor-pointer">
+							RESERVATION
+						</button>
+					</Link>
+
+					<Link to="/menu">
 					<button className="border border-[#42965f] text-[#42965f] px-6 py-2 rounded-md hover:bg-[#f4f4f4] transition duration-300 hover:cursor-pointer">
 						VIEW MENU
 					</button>
+					</Link>
 				</div>
 
 				<p className="text-sm text-gray-600 mt-5">info.grandma@yahoo.com</p>
 				<p className="text-sm text-gray-600 mt-0">+91 9876543210</p>
 			</div>
 
-			<Footer/>
+			<Footer />
 
 		</>
 	);
